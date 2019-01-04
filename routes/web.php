@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', '\App\Modules\Auth\Controllers\LoginController@getLogin');
+Route::get('register', '\App\Modules\Auth\Controllers\RegisterController@getRegister');
+Route::get('forgot', '\App\Modules\Auth\Controllers\ForgotPasswordController@getForgotPassword');
+
