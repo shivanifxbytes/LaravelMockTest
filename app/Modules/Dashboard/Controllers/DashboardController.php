@@ -49,4 +49,16 @@ class DashboardController extends Controller
         Session::put('locale', $local);
         return redirect()->back();
     }
+
+    /**
+    * @DateOfCreation         08 Jan 2018
+    * @ShortDescription       Distroy the session and Make the Auth Logout
+    * @return                 Response
+    */
+    public function getLogout()
+    {
+        Auth::logout();
+        Session::flush();
+        return redirect('/');
+    }
 }
