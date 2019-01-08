@@ -6,7 +6,24 @@
             <div class="card">
                 <div class="card-header">{{ __('Login') }}</div>
                 <div class="card-body">
+                    @if(session()->has('message'))
+                        <p class="col-md-12 alert alert-success notify_msg">
+                            {{ session()->get('message') }}
+                        </p>
+                    @endif
                     <form method="POST" action="">
+                        <div class="mb-3 position-relative form-group">
+                            @if (session('status'))
+                                <div class="alert alert-success notify_msg">
+                                    {{ session('status') }}
+                                </div>
+                            @endif
+                            @if (session('warning'))
+                                <div class="alert-danger notify_msg">
+                                    {{ session('warning') }}
+                                </div>
+                            @endif
+                        </div>
                         @csrf
                         <div class="form-group row">
                             <label for="email" class="col-sm-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
