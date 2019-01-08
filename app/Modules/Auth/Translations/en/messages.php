@@ -1,0 +1,35 @@
+<?php 
+
+return [
+    'EMAIL_VERIFY_WARNING' => 'You need to confirm your account. We have sent you an activation code, please check your email.',
+    'EMAIL_VERIFY_SUCCESS' => 'Email verified successfully. Now you can log in.',
+    'ALREADY_VERIFY_USER'  => 'Email already verified, Please login..',
+    'USER_VERIFY_SUCCESS'  => 'You are registered. Now check your email for verification.',
+    'REG_EMAIL_SUBJECT'    => 'Getting started',
+    'RESET_EMAIL_SUBJECT'  => 'password reset',
+    'EXPIRE'               => 'Password Reset Link Expire',
+    'PASSWORD_UPDATE_SUCCESSFULLY' => 'Password Update Successfully',  
+    'SEND_EMAIL_LINK'              => 'We have sent you reset password link, please check your email.',
+    'LOGIN_SUCCESS'                => 'Welcome! To website.',
+    'WRONG_PASSWORD_ADMIN'         => 'Password Is Incorrect',
+    'WRONG_PASSWORD_USER'          => 'Password Is Incorrect',
+    'USER_NOT_EXIST'               => 'You havent registered yet. Would you like to create an account now?',
+    'TERMS_OF_SERVICE'             => 'Terms of Service',
+    'PRIVACY_POLICY'               => 'Privacy Policy',
+    'SIGN_IN'                      => 'Sign In',
+    'EMAIL_PHONE'                  => 'Email / Phone Number',
+    'PASSWORD'                     => 'Password',
+    'REMEMBER_ME'                  => 'Remember me',
+    'NO_ACCOUNT'                   => 'No account?',
+    'REGISTER_NOW'                 => 'Register now',
+    'FORGOT_PASSWORD'              => 'Forgot password?',
+    'EMAIL'                        => 'Email',
+    'PASSWORD'                     => 'Password',
+    'CONF_PASS'                    => 'Confirm Password',
+    'CHANGE_PASS'                  => 'Change Password',
+    'REGISTER_WITH_EMAIL'          => 'Register with Email',
+    'RESET_PASSWORD'               => 'Reset Password',
+    'REGISTER'                     => 'Register',
+    'PASS_VAL_MSG'                 => 'Password must have a minimum of 8 characters and contain at least one lower case letter, one upper case letter, one number and one special character.'
+];
+
