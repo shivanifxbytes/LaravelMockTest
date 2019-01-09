@@ -27,3 +27,6 @@ Route::group(['module' => 'Dashboard', 'middleware' => ['auth'], 'namespace' => 
 	Route::get('/dashboard', '\App\Modules\Dashboard\Controllers\DashboardController@viewDashboard');
 });
 
+// Logout user
+Route::post('/logout','\App\Modules\Dashboard\Controllers\DashboardController@getLogout');
+
